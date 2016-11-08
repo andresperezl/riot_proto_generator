@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message TournamentCode{
+  string code = 1;
+  int32 id = 2;
+  string lobbyName = 3;
+  string map = 4;
+  string metaData = 5;
+  repeated int64 participants = 6;
+  string password = 7;
+  string pickType = 8;
+  int32 providerId = 9;
+  string region = 10;
+  string spectators = 11;
+  int32 teamSize = 12;
+  int32 tournamentId = 13;
+}

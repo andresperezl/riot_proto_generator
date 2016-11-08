@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "mastery.proto";
+import "mastery_tree.proto";
+
+message MasteryList{
+  map<string, Mastery> data = 1;
+  MasteryTree tree = 2;
+  string type = 3;
+  string version = 4;
+}

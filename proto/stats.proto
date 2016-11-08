@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Stats{
+  double armor = 1;
+  double armorperlevel = 2;
+  double attackdamage = 3;
+  double attackdamageperlevel = 4;
+  double attackrange = 5;
+  double attackspeedoffset = 6;
+  double attackspeedperlevel = 7;
+  double crit = 8;
+  double critperlevel = 9;
+  double hp = 10;
+  double hpperlevel = 11;
+  double hpregen = 12;
+  double hpregenperlevel = 13;
+  double movespeed = 14;
+  double mp = 15;
+  double mpperlevel = 16;
+  double mpregen = 17;
+  double mpregenperlevel = 18;
+  double spellblock = 19;
+  double spellblockperlevel = 20;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "rune_page.proto";
+
+message RunePages{
+  repeated RunePage pages = 1;
+  int64 summonerId = 2;
+}

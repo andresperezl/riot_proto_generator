@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message LobbyEvent{
+  repeated LobbyEvent eventList = 1;
+  string eventType = 2;
+  string summonerId = 3;
+  string timestamp = 4;
+}

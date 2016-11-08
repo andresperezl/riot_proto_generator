@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message TeamStatDetail{
+  int32 averageGamesPlayed = 1;
+  int32 losses = 2;
+  string teamStatType = 3;
+  int32 wins = 4;
+}

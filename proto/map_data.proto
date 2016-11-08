@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "map_details.proto";
+
+message MapData{
+  map<string, MapDetails> data = 1;
+  string type = 2;
+  string version = 3;
+}

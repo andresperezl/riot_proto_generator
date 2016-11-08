@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "aggregated_stats.proto";
+
+message PlayerStatsSummary{
+  AggregatedStats aggregatedStats = 1;
+  int32 losses = 2;
+  int64 modifyDate = 3;
+  string playerStatSummaryType = 4;
+  int32 wins = 5;
+}

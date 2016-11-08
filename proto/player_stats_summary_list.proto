@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "player_stats_summary.proto";
+
+message PlayerStatsSummaryList{
+  repeated PlayerStatsSummary playerStatSummaries = 1;
+  int64 summonerId = 2;
+}

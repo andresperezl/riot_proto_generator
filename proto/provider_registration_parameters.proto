@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message ProviderRegistrationParameters{
+  string region = 1;
+  string url = 2;
+}

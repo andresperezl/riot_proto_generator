@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Player{
+  int32 championId = 1;
+  int64 summonerId = 2;
+  int32 teamId = 3;
+  string matchHistoryUri = 4;
+  int32 profileIcon = 5;
+  string summonerName = 6;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message MasteryTreeItem{
+  int32 masteryId = 1;
+  string prereq = 2;
+}

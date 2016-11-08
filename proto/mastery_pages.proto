@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "mastery_page.proto";
+
+message MasteryPages{
+  repeated MasteryPage pages = 1;
+  int64 summonerId = 2;
+}

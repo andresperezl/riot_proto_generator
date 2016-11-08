@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "featured_game_info.proto";
+
+message FeaturedGames{
+  int64 clientRefreshInterval = 1;
+  repeated FeaturedGameInfo gameList = 2;
+}

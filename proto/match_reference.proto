@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message MatchReference{
+  int64 champion = 1;
+  string lane = 2;
+  int64 matchId = 3;
+  string platformId = 4;
+  string queue = 5;
+  string region = 6;
+  string role = 7;
+  string season = 8;
+  int64 timestamp = 9;
+}

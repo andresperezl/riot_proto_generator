@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Gold{
+  int32 base = 1;
+  bool purchasable = 2;
+  int32 sell = 3;
+  int32 total = 4;
+}

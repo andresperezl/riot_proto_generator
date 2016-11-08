@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "image.proto";
+
+message MapDetails{
+  Image image = 1;
+  int64 mapId = 2;
+  string mapName = 3;
+  repeated int64 unpurchasableItemList = 4;
+}

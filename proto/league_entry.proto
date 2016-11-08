@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "mini_series.proto";
+
+message LeagueEntry{
+  string division = 1;
+  bool isFreshBlood = 2;
+  bool isHotStreak = 3;
+  bool isInactive = 4;
+  bool isVeteran = 5;
+  int32 leaguePoints = 6;
+  int32 losses = 7;
+  MiniSeries miniSeries = 8;
+  string playerOrTeamId = 9;
+  string playerOrTeamName = 10;
+  string playstyle = 11;
+  int32 wins = 12;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Info{
+  int32 attack = 1;
+  int32 defense = 2;
+  int32 difficulty = 3;
+  int32 magic = 4;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "basic_data.proto";
+import "rune.proto";
+
+message RuneList{
+  BasicData basic = 1;
+  map<string, Rune> data = 2;
+  string type = 3;
+  string version = 4;
+}

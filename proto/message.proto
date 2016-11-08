@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "translation.proto";
+
+message Message{
+  string author = 1;
+  string content = 2;
+  string created_at = 3;
+  string id = 4;
+  string severity = 5;
+  repeated Translation translations = 6;
+  string updated_at = 7;
+}

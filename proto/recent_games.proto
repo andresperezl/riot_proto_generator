@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "game.proto";
+
+message RecentGames{
+  repeated Game games = 1;
+  int64 summonerId = 2;
+}

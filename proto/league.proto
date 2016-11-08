@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "league_entry.proto";
+
+message League{
+  repeated LeagueEntry entries = 1;
+  string name = 2;
+  string participantId = 3;
+  string queue = 4;
+  string tier = 5;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message ChampionMastery{
+  int64 championId = 1;
+  int32 championLevel = 2;
+  int32 championPoints = 3;
+  int64 championPointsSinceLastLevel = 4;
+  int64 championPointsUntilNextLevel = 5;
+  bool chestGranted = 6;
+  int64 lastPlayTime = 7;
+  int64 playerId = 8;
+}

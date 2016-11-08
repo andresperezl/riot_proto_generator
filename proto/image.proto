@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Image{
+  string full = 1;
+  string group = 2;
+  int32 h = 3;
+  string sprite = 4;
+  int32 w = 5;
+  int32 x = 6;
+  int32 y = 7;
+}

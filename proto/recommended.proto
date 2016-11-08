@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "block.proto";
+
+message Recommended{
+  repeated Block blocks = 1;
+  string champion = 2;
+  string map = 3;
+  string mode = 4;
+  bool priority = 5;
+  string title = 6;
+  string type = 7;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "frame.proto";
+
+message Timeline{
+  int64 frameInterval = 1;
+  repeated Frame frames = 2;
+}

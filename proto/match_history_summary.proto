@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message MatchHistorySummary{
+  int32 assists = 1;
+  int64 date = 2;
+  int32 deaths = 3;
+  int64 gameId = 4;
+  string gameMode = 5;
+  bool invalid = 6;
+  int32 kills = 7;
+  int32 mapId = 8;
+  int32 opposingTeamKills = 9;
+  string opposingTeamName = 10;
+  bool win = 11;
+}

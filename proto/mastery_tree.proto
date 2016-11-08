@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "mastery_tree_list.proto";
+
+message MasteryTree{
+  repeated MasteryTreeList Cunning = 1;
+  repeated MasteryTreeList Ferocity = 2;
+  repeated MasteryTreeList Resolve = 3;
+}

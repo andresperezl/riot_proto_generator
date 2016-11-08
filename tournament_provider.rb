@@ -1,0 +1,3 @@
+module TournamentProvider
+  VERSION = '1.0'
+end

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message MiniSeries{
+  int32 losses = 1;
+  string progress = 2;
+  int32 target = 3;
+  int32 wins = 4;
+}

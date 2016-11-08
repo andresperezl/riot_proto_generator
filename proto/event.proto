@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "position.proto";
+
+message Event{
+  string ascendedType = 1;
+  repeated int32 assistingParticipantIds = 2;
+  string buildingType = 3;
+  int32 creatorId = 4;
+  string eventType = 5;
+  int32 itemAfter = 6;
+  int32 itemBefore = 7;
+  int32 itemId = 8;
+  int32 killerId = 9;
+  string laneType = 10;
+  string levelUpType = 11;
+  string monsterType = 12;
+  int32 participantId = 13;
+  string pointCaptured = 14;
+  Position position = 15;
+  int32 skillSlot = 16;
+  int32 teamId = 17;
+  int64 timestamp = 18;
+  string towerType = 19;
+  int32 victimId = 20;
+  string wardType = 21;
+}

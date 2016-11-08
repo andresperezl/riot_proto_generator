@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "participant_identity.proto";
+import "participant.proto";
+import "team.proto";
+import "timeline.proto";
+
+message MatchDetail{
+  int32 mapId = 1;
+  int64 matchCreation = 2;
+  int64 matchDuration = 3;
+  int64 matchId = 4;
+  string matchMode = 5;
+  string matchType = 6;
+  string matchVersion = 7;
+  repeated ParticipantIdentity participantIdentities = 8;
+  repeated Participant participants = 9;
+  string platformId = 10;
+  string queueType = 11;
+  string region = 12;
+  string season = 13;
+  repeated Team teams = 14;
+  Timeline timeline = 15;
+}

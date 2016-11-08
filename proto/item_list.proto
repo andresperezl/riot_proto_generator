@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "basic_data.proto";
+import "item.proto";
+import "group.proto";
+import "item_tree.proto";
+
+message ItemList{
+  BasicData basic = 1;
+  map<string, Item> data = 2;
+  repeated Group groups = 3;
+  repeated ItemTree tree = 4;
+  string type = 5;
+  string version = 6;
+}

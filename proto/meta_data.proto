@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message MetaData{
+  bool isRune = 1;
+  string tier = 2;
+  string type = 3;
+}

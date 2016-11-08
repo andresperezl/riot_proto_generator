@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "image.proto";
+
+message Mastery{
+  int64 masteryId = 1;
+  int32 rank = 2;
+  repeated string description = 3;
+  int32 id = 4;
+  Image image = 5;
+  string masteryTree = 6;
+  string name = 7;
+  string prereq = 8;
+  int32 ranks = 9;
+  repeated string sanitizedDescription = 10;
+}

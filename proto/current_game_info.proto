@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "banned_champion.proto";
+import "observer.proto";
+import "current_game_participant.proto";
+
+message CurrentGameInfo{
+  repeated BannedChampion bannedChampions = 1;
+  int64 gameId = 2;
+  int64 gameLength = 3;
+  string gameMode = 4;
+  int64 gameQueueConfigId = 5;
+  int64 gameStartTime = 6;
+  string gameType = 7;
+  int64 mapId = 8;
+  Observer observers = 9;
+  repeated CurrentGameParticipant participants = 10;
+  string platformId = 11;
+}

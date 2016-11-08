@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Position{
+  int32 x = 1;
+  int32 y = 2;
+}

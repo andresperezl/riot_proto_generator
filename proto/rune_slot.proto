@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message RuneSlot{
+  int32 runeId = 1;
+  int32 runeSlotId = 2;
+}

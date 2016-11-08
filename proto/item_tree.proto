@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message ItemTree{
+  string header = 1;
+  repeated string tags = 2;
+}

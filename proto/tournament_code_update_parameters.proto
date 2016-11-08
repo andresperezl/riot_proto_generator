@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message TournamentCodeUpdateParameters{
+  string allowedParticipants = 1;
+  string mapType = 2;
+  string pickType = 3;
+  string spectatorType = 4;
+}

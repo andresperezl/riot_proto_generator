@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "match_reference.proto";
+
+message MatchList{
+  int32 endIndex = 1;
+  repeated MatchReference matches = 2;
+  int32 startIndex = 3;
+  int32 totalGames = 4;
+}

@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "banned_champion.proto";
+import "match_history_summary.proto";
+import "roster.proto";
+import "team_stat_detail.proto";
+
+message Team{
+  repeated BannedChampion bans = 1;
+  int32 baronKills = 2;
+  int64 dominionVictoryScore = 3;
+  int32 dragonKills = 4;
+  bool firstBaron = 5;
+  bool firstBlood = 6;
+  bool firstDragon = 7;
+  bool firstInhibitor = 8;
+  bool firstRiftHerald = 9;
+  bool firstTower = 10;
+  int32 inhibitorKills = 11;
+  int32 riftHeraldKills = 12;
+  int32 teamId = 13;
+  int32 towerKills = 14;
+  int32 vilemawKills = 15;
+  bool winner = 16;
+  int64 createDate = 17;
+  string fullId = 18;
+  int64 lastGameDate = 19;
+  int64 lastJoinDate = 20;
+  int64 lastJoinedRankedTeamQueueDate = 21;
+  repeated MatchHistorySummary matchHistory = 22;
+  int64 modifyDate = 23;
+  string name = 24;
+  Roster roster = 25;
+  int64 secondLastJoinDate = 26;
+  string status = 27;
+  string tag = 28;
+  repeated TeamStatDetail teamStatDetails = 29;
+  int64 thirdLastJoinDate = 30;
+}

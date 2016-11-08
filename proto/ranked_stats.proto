@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "champion_stats.proto";
+
+message RankedStats{
+  repeated ChampionStats champions = 1;
+  int64 modifyDate = 2;
+  int64 summonerId = 3;
+}

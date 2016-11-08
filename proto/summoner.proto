@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Summoner{
+  int64 id = 1;
+  string name = 2;
+  int32 profileIconId = 3;
+  int64 revisionDate = 4;
+  int64 summonerLevel = 5;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message SpellVars{
+  repeated double coeff = 1;
+  string dyn = 2;
+  string key = 3;
+  string link = 4;
+  string ranksWith = 5;
+}

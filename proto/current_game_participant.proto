@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "mastery.proto";
+import "rune.proto";
+
+message CurrentGameParticipant{
+  bool bot = 1;
+  int64 championId = 2;
+  repeated Mastery masteries = 3;
+  int64 profileIconId = 4;
+  repeated Rune runes = 5;
+  int64 spell1Id = 6;
+  int64 spell2Id = 7;
+  int64 summonerId = 8;
+  string summonerName = 9;
+  int64 teamId = 10;
+}

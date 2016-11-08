@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "summoner_id_params.proto";
+
+message TournamentCodeParameters{
+  SummonerIdParams allowedSummonerIds = 1;
+  string mapType = 2;
+  string metadata = 3;
+  string pickType = 4;
+  string spectatorType = 5;
+  int32 teamSize = 6;
+}

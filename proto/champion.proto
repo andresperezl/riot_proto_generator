@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "image.proto";
+import "info.proto";
+import "passive.proto";
+import "recommended.proto";
+import "skin.proto";
+import "champion_spell.proto";
+import "stats.proto";
+
+message Champion{
+  bool active = 1;
+  bool botEnabled = 2;
+  bool botMmEnabled = 3;
+  bool freeToPlay = 4;
+  int32 id = 5;
+  bool rankedPlayEnabled = 6;
+  repeated string allytips = 7;
+  string blurb = 8;
+  repeated string enemytips = 9;
+  Image image = 10;
+  Info info = 11;
+  string key = 12;
+  string lore = 13;
+  string name = 14;
+  string partype = 15;
+  Passive passive = 16;
+  repeated Recommended recommended = 17;
+  repeated Skin skins = 18;
+  repeated ChampionSpell spells = 19;
+  Stats stats = 20;
+  repeated string tags = 21;
+  string title = 22;
+}

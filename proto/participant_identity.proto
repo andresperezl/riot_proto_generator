@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "player.proto";
+
+message ParticipantIdentity{
+  int32 participantId = 1;
+  Player player = 2;
+}

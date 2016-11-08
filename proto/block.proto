@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "block_item.proto";
+
+message Block{
+  repeated BlockItem items = 1;
+  bool recMath = 2;
+  string type = 3;
+}

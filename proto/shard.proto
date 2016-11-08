@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Shard{
+  string hostname = 1;
+  repeated string locales = 2;
+  string name = 3;
+  string region_tag = 4;
+  string slug = 5;
+}

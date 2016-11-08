@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "champion.proto";
+
+message ChampionList{
+  repeated Champion champions = 1;
+  map<string, Champion> data = 2;
+  string format = 3;
+  map<string, string> keys = 4;
+  string type = 5;
+  string version = 6;
+}

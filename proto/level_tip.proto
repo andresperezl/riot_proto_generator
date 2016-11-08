@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message LevelTip{
+  repeated string effect = 1;
+  repeated string label = 2;
+}

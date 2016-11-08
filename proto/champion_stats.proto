@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "aggregated_stats.proto";
+
+message ChampionStats{
+  int32 id = 1;
+  AggregatedStats stats = 2;
+}

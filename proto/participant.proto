@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "mastery.proto";
+import "rune.proto";
+import "participant_stats.proto";
+import "participant_timeline.proto";
+
+message Participant{
+  bool bot = 1;
+  int32 championId = 2;
+  int64 profileIconId = 3;
+  int32 spell1Id = 4;
+  int32 spell2Id = 5;
+  string summonerName = 6;
+  int32 teamId = 7;
+  string highestAchievedSeasonTier = 8;
+  repeated Mastery masteries = 9;
+  int32 participantId = 10;
+  repeated Rune runes = 11;
+  ParticipantStats stats = 12;
+  ParticipantTimeline timeline = 13;
+}

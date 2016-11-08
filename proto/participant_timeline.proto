@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "participant_timeline_data.proto";
+
+message ParticipantTimeline{
+  ParticipantTimelineData ancientGolemAssistsPerMinCounts = 1;
+  ParticipantTimelineData ancientGolemKillsPerMinCounts = 2;
+  ParticipantTimelineData assistedLaneDeathsPerMinDeltas = 3;
+  ParticipantTimelineData assistedLaneKillsPerMinDeltas = 4;
+  ParticipantTimelineData baronAssistsPerMinCounts = 5;
+  ParticipantTimelineData baronKillsPerMinCounts = 6;
+  ParticipantTimelineData creepsPerMinDeltas = 7;
+  ParticipantTimelineData csDiffPerMinDeltas = 8;
+  ParticipantTimelineData damageTakenDiffPerMinDeltas = 9;
+  ParticipantTimelineData damageTakenPerMinDeltas = 10;
+  ParticipantTimelineData dragonAssistsPerMinCounts = 11;
+  ParticipantTimelineData dragonKillsPerMinCounts = 12;
+  ParticipantTimelineData elderLizardAssistsPerMinCounts = 13;
+  ParticipantTimelineData elderLizardKillsPerMinCounts = 14;
+  ParticipantTimelineData goldPerMinDeltas = 15;
+  ParticipantTimelineData inhibitorAssistsPerMinCounts = 16;
+  ParticipantTimelineData inhibitorKillsPerMinCounts = 17;
+  string lane = 18;
+  string role = 19;
+  ParticipantTimelineData towerAssistsPerMinCounts = 20;
+  ParticipantTimelineData towerKillsPerMinCounts = 21;
+  ParticipantTimelineData towerKillsPerMinDeltas = 22;
+  ParticipantTimelineData vilemawAssistsPerMinCounts = 23;
+  ParticipantTimelineData vilemawKillsPerMinCounts = 24;
+  ParticipantTimelineData wardsPerMinDeltas = 25;
+  ParticipantTimelineData xpDiffPerMinDeltas = 26;
+  ParticipantTimelineData xpPerMinDeltas = 27;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message ParticipantTimelineData{
+  double tenToTwenty = 1;
+  double thirtyToEnd = 2;
+  double twentyToThirty = 3;
+  double zeroToTen = 4;
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "player.proto";
+import "raw_stats.proto";
+
+message Game{
+  int32 championId = 1;
+  int64 createDate = 2;
+  repeated Player fellowPlayers = 3;
+  int64 gameId = 4;
+  string gameMode = 5;
+  string gameType = 6;
+  bool invalid = 7;
+  int32 ipEarned = 8;
+  int32 level = 9;
+  int32 mapId = 10;
+  int32 spell1 = 11;
+  int32 spell2 = 12;
+  RawStats stats = 13;
+  string subType = 14;
+  int32 teamId = 15;
+}

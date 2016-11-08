@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message Realm{
+  string cdn = 1;
+  string css = 2;
+  string dd = 3;
+  string l = 4;
+  string lg = 5;
+  map<string, string> n = 6;
+  int32 profileiconmax = 7;
+  string store = 8;
+  string v = 9;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "summoner_spell.proto";
+
+message SummonerSpellList{
+  map<string, SummonerSpell> data = 1;
+  string type = 2;
+  string version = 3;
+}

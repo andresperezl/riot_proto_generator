@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "image.proto";
+import "meta_data.proto";
+import "basic_data_stats.proto";
+
+message Rune{
+  int32 count = 1;
+  int64 runeId = 2;
+  string colloq = 3;
+  bool consumeOnFull = 4;
+  bool consumed = 5;
+  int32 depth = 6;
+  string description = 7;
+  repeated string from = 8;
+  string group = 9;
+  bool hideFromAll = 10;
+  int32 id = 11;
+  Image image = 12;
+  bool inStore = 13;
+  repeated string into = 14;
+  map<string, bool> maps = 15;
+  string name = 16;
+  string plaintext = 17;
+  string requiredChampion = 18;
+  MetaData rune = 19;
+  string sanitizedDescription = 20;
+  int32 specialRecipe = 21;
+  int32 stacks = 22;
+  BasicDataStats stats = 23;
+  repeated string tags = 24;
+  int64 rank = 25;
+}

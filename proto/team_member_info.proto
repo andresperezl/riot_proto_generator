@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message TeamMemberInfo{
+  int64 inviteDate = 1;
+  int64 joinDate = 2;
+  int64 playerId = 3;
+  string status = 4;
+}

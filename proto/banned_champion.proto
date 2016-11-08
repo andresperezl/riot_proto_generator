@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message BannedChampion{
+  int32 championId = 1;
+  int32 pickTurn = 2;
+  int64 teamId = 3;
+}

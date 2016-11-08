@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "image.proto";
+
+message Passive{
+  string description = 1;
+  Image image = 2;
+  string name = 3;
+  string sanitizedDescription = 4;
+}

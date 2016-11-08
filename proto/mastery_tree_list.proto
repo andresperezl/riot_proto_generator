@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "mastery_tree_item.proto";
+
+message MasteryTreeList{
+  repeated MasteryTreeItem masteryTreeItems = 1;
+}

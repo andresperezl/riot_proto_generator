@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "position.proto";
+
+message ParticipantFrame{
+  int32 currentGold = 1;
+  int32 dominionScore = 2;
+  int32 jungleMinionsKilled = 3;
+  int32 level = 4;
+  int32 minionsKilled = 5;
+  int32 participantId = 6;
+  Position position = 7;
+  int32 teamScore = 8;
+  int32 totalGold = 9;
+  int32 xp = 10;
+}

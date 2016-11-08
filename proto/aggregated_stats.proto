@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+
+message AggregatedStats{
+  int32 averageAssists = 1;
+  int32 averageChampionsKilled = 2;
+  int32 averageCombatPlayerScore = 3;
+  int32 averageNodeCapture = 4;
+  int32 averageNodeCaptureAssist = 5;
+  int32 averageNodeNeutralize = 6;
+  int32 averageNodeNeutralizeAssist = 7;
+  int32 averageNumDeaths = 8;
+  int32 averageObjectivePlayerScore = 9;
+  int32 averageTeamObjective = 10;
+  int32 averageTotalPlayerScore = 11;
+  int32 botGamesPlayed = 12;
+  int32 killingSpree = 13;
+  int32 maxAssists = 14;
+  int32 maxChampionsKilled = 15;
+  int32 maxCombatPlayerScore = 16;
+  int32 maxLargestCriticalStrike = 17;
+  int32 maxLargestKillingSpree = 18;
+  int32 maxNodeCapture = 19;
+  int32 maxNodeCaptureAssist = 20;
+  int32 maxNodeNeutralize = 21;
+  int32 maxNodeNeutralizeAssist = 22;
+  int32 maxNumDeaths = 23;
+  int32 maxObjectivePlayerScore = 24;
+  int32 maxTeamObjective = 25;
+  int32 maxTimePlayed = 26;
+  int32 maxTimeSpentLiving = 27;
+  int32 maxTotalPlayerScore = 28;
+  int32 mostChampionKillsPerSession = 29;
+  int32 mostSpellsCast = 30;
+  int32 normalGamesPlayed = 31;
+  int32 rankedPremadeGamesPlayed = 32;
+  int32 rankedSoloGamesPlayed = 33;
+  int32 totalAssists = 34;
+  int32 totalChampionKills = 35;
+  int32 totalDamageDealt = 36;
+  int32 totalDamageTaken = 37;
+  int32 totalDeathsPerSession = 38;
+  int32 totalDoubleKills = 39;
+  int32 totalFirstBlood = 40;
+  int32 totalGoldEarned = 41;
+  int32 totalHeal = 42;
+  int32 totalMagicDamageDealt = 43;
+  int32 totalMinionKills = 44;
+  int32 totalNeutralMinionsKilled = 45;
+  int32 totalNodeCapture = 46;
+  int32 totalNodeNeutralize = 47;
+  int32 totalPentaKills = 48;
+  int32 totalPhysicalDamageDealt = 49;
+  int32 totalQuadraKills = 50;
+  int32 totalSessionsLost = 51;
+  int32 totalSessionsPlayed = 52;
+  int32 totalSessionsWon = 53;
+  int32 totalTripleKills = 54;
+  int32 totalTurretsKilled = 55;
+  int32 totalUnrealKills = 56;
+}

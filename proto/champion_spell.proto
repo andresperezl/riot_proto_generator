@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package riotAPI.protos;
+
+import "image.proto";
+import "google/protobuf/any.proto";
+import "level_tip.proto";
+import "spell_vars.proto";
+
+message ChampionSpell{
+  repeated Image altimages = 1;
+  repeated double cooldown = 2;
+  string cooldownBurn = 3;
+  repeated int32 cost = 4;
+  string costBurn = 5;
+  string costType = 6;
+  string description = 7;
+  repeated google.protobuf.Any effect = 8;
+  repeated string effectBurn = 9;
+  Image image = 10;
+  string key = 11;
+  LevelTip leveltip = 12;
+  int32 maxrank = 13;
+  string name = 14;
+  google.protobuf.Any range = 15;
+  string rangeBurn = 16;
+  string resource = 17;
+  string sanitizedDescription = 18;
+  string sanitizedTooltip = 19;
+  string tooltip = 20;
+  repeated SpellVars vars = 21;
+}
