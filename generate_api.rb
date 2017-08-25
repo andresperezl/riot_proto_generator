@@ -4,6 +4,7 @@ require 'set'
 require 'pp'
 
 class String
+  # camel case to snakecase
   def to_underscore!
     self.gsub!(/::/, '/')
     self.gsub!(/([A-Z]+)([A-Z][a-z])/,'\1_\2')
@@ -25,6 +26,7 @@ def getType(type)
     if t.match(/^[A-Z]/)
       import_types << t
     end
+    # Match the natives types of the Api with the protobuf native types
     case t
     when 'int'
       result << 'int32'
@@ -43,10 +45,12 @@ def getType(type)
 end
 
 doc = Nokogiri::HTML(open("https://developer.riotgames.com/api/methods"))
+# Find all the resources in the document
 resources = doc.css("[id^=resource_]")
 protos = {}
 resources.each do |resource|
   resource_content = ""
+  #Get the name and version of the resource
   name, version, version2 = resource.css("div > h2 > a > span").first.inner_text.split(/-(?=v\d+(\.\d+)*$)/)
   resource_content << "module #{ name.split('-').collect(&:capitalize).join }"
   unless version.nil?
@@ -58,7 +62,8 @@ resources.each do |resource|
   File.open("#{ name.gsub("-", "_") }.rb", "w") do |f|
     f.write(resource_content)
   end
-
+  
+  # Process the properties of the resources and assign the correct types and imports
   resource.css(".block.response_body").each do |response|
     response.css("> b").each do |dto|
       next if dto.text.match("Return Value:")
@@ -96,6 +101,7 @@ end
 
 #pp protos
 
+#Export the generated protos
 Dir.mkdir("proto") unless Dir.exist?("proto")
 
 protos.keys.each do |proto|
